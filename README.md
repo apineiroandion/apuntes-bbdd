@@ -6,7 +6,7 @@
 Por defecto se conecta al esquema **public**. Si quiero acceder a otro esquema necesito tener permiso para entrar, una vez dentro también se necesita permisos para acceder a cada tabla.
 -  **\l** - Ver lista de bases de datos.
 - **\du** - Ver lista de usuarios (y sus roles asignados).
-- **\dt** - Ver lista de tablas. (**\dt schemaName.* ** - Para ver las tablas de un esquema concreto)
+- **\dt** - Ver lista de tablas. (**\dt schemaName.*** - Para ver las tablas de un esquema concreto)
 	- **\dt e.**- Muestra las tablas de los esquemas que empiezan por la letra ***e*** (lleva asterisco a cada lado del punto)
 - **\dn** - Ver lista de esquemas.
 	- **\dn+** - Ver lista de esquemas con sus permisos (UC = **U**sage - **C**reate table).

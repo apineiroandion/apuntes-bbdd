@@ -69,6 +69,25 @@ Por defecto se conecta al esquema **public**. Si quiero acceder a otro esquema n
 	- **grant ventas to alicia;** - Mete a ***alicia*** en el rol ***ventas***.
 3. **grant connect on database dam to readonly;** - Concede permisos al rol (***readonly***) para conectarse a la base de datos ***dam***.
 4. **grant insert on es3.xogador to readonly;** - Concede permisos de inserción en la tabla ***xogador*** del esquema ***u3*** al rol ***readonly**.
+
+## Privilegios
+- Tipos de privilegios: **a=arwdDxt/a**
+	- **_/a_** - Quien concede los permisos. (**_a_** es el nombre del usuario)
+	- Un * significa que puede darle permisos a otros usuarios.
+
+	| Tipo | Abreviatura |
+	| :--------: | :---------: |
+	| INSERT | ***a*** |
+	| SELECT | ***r*** |
+	| UPDATE | ***w*** |
+	| DELETE | ***d*** |
+	| TRUNCATE | ***D*** |
+	| REFERENCES | ***x*** |
+	| TRIGGER | ***t*** |
+	| USAGE | ***U*** |
+	| CREATE | ***C*** |
+	| CONNECT | ***c*** |
+	| DATABASE | ***CTc*** |
 ## Copias de seguridad
 ### Crear (poner siempre exit antes)
 1. Poner ***exit***.
